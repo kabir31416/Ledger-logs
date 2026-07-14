@@ -37,7 +37,9 @@ export default function LoginPage() {
         toast.error(err.message);
         if (err.fieldErrors) {
           const fieldErrors: Record<string, string> = {};
-          for (const [key, msgs] of Object.entries(err.fieldErrors)) fieldErrors[key] = msgs[0];
+          for (const [key, msgs] of Object.entries(err.fieldErrors)) {
+            fieldErrors[key] = msgs[0] ?? "";
+          }
           setErrors(fieldErrors);
         }
       } else {
