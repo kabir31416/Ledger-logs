@@ -6,8 +6,8 @@ import { ok, withErrorHandling } from "@/lib/api-utils";
 import { EXPENSE_CATEGORIES, EXPENSE_PRIORITIES } from "@/config/constants";
 import type { PublicUser } from "@/types";
 
-const DEMO_EMAIL = "demo@expensetracker.app";
-const DEMO_PASSWORD = "Demo1234";
+const DEMO_EMAIL = "hi@programminghero.com";
+const DEMO_PASSWORD = "Ph@heroB13";
 
 
 export async function POST() {
